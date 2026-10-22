@@ -1,0 +1,144 @@
+@import url(./variables.css);
+body
+{
+    overflow: auto;
+    width: 100%;
+}
+.sottotitolo
+{
+    color: var(--primario);
+    position: sticky;
+    top: 0;
+    background: var(--quaternario);
+    padding-left: 30px;
+}
+.container
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.card
+{
+    background: var(--secondario);
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 20px 20px 15px -3px rgba(0,0,0,0.1);
+    cursor: default;
+    margin: 20px;
+    
+}
+.card_info
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_info .azioni
+{
+    cursor: pointer;
+}
+.card_body
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.card_body img
+{
+    width: 90%;
+    aspect-ratio: 1;
+}
+.card_body .img_container img
+{
+    width: 100%;
+}
+.card_body i
+{
+    font-size: 10rem;
+}
+.menu
+{
+    display: none;
+    position: absolute;
+    background: var(--secondario);
+    border-radius: 20px;
+    box-shadow: 20px 20px 15px -3px rgba(0,0,0,0.1);
+    padding: 20px 0px;
+}
+.menu ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li
+{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0px 20px;
+
+}
+.menu ul .nonElimina:hover
+{
+    background: var(--quaternario);
+}
+
+.menu ul li a
+{
+    text-decoration: none;
+    color: var(--testo);
+}
+.menu .elimina a
+{
+    color: red;
+}
+.elimina:hover
+{
+    background: red;
+}
+.elimina:hover > a
+{
+    color: white;
+}
+.mobile
+{
+    display: none;
+}
+.iscriviti{
+    color: var(--secondario);
+    background: var(--primario);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 15px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px)
+{
+    .container
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .card
+    {
+        margin-left: 0px;
+    }
+
+}

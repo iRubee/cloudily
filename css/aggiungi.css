@@ -1,0 +1,63 @@
+@import url(./variables.css);
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    background: var(--secondario);
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 20px 20px 15px -3px rgba(0,0,0,0.1);
+}
+h1
+{
+    color: var(--primario);
+    margin-bottom: 30px;
+    text-align: center;
+}
+button
+{
+    color: var(--secondario);
+    background: var(--primario);
+    border: none;
+    font-size: 1.3rem;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+input
+{
+    margin: 5px 0px 20px 0px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid var(--primario);
+    outline: none;
+
+}
+a
+{
+    text-decoration: none;
+    color: var(--primario);
+    margin-top: 10px;
+    width: 200px;
+    
+}
+a:hover
+{
+    text-decoration: underline;
+}
+@media (max-width: 779px) {
+    form
+    {
+        width: 80%;
+    }
+}

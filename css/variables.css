@@ -1,0 +1,28 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --primario: #ff6200;
+    --testo: #000;
+    --secondario: #fff;
+    --terziario: #a5a5a5;
+    --quaternario: #f3f4f6;
+}
+body
+{
+    background-color: var(--quaternario);
+    color: var(--testo);
+    overflow: hidden;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+.font
+{
+    font-family: 'Roboto', sans-serif;
+}
